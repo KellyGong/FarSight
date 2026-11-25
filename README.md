@@ -21,7 +21,9 @@ your nodes, draws how the servers talk to each other, and tells you what a milli
 [Quick start](#quick-start) · [Features](#features) · [How it works](#how-it-works) ·
 [What it does on your nodes](#what-farsight-does-on-your-nodes) · [Reference](#reference)
 
-<img src="docs/overview.png" alt="Cluster overview: service cards on top, compute nodes below">
+<img src="docs/tour.webp" width="100%" alt="A 45-second tour of FarSight: the cluster overview, adding a node, a service page with its cost estimate, the communication topology between and inside servers, a node page, the dark theme and the Chinese interface">
+
+<sub>A 45-second tour, recorded on the synthetic cluster of <code>farsight --demo</code>. Also available as an <a href="docs/tour.mp4">MP4 video</a>.</sub>
 
 </div>
 
@@ -132,10 +134,6 @@ path (frontend, prefill, decode, service discovery), which node and GPUs every c
 and queued, output tokens per second, time to first token P50 / P95, inter-token latency, error ratio, cache hits
 and KV pool usage, read from the service's own `/metrics`.
 
-| Service page, dark theme | Node page |
-|---|---|
-| ![Service page with request path, cost estimate and trends](docs/service-dark.png) | ![Node page with per-GPU load and occupants](docs/node.png) |
-
 ### Communication topology
 
 The **Topology** tab of the overview draws one box per server and one line per pair of servers that talk to each
@@ -144,10 +142,6 @@ connections, evidence). Click a server to look inside: its components, their pro
 between them.
 
 The lines are real connections taken from each node's socket table, not a diagram drawn from configuration.
-
-| Between servers | Inside one server |
-|---|---|
-| ![Cluster topology](docs/topology.png) | ![Topology inside one server](docs/topology-inside.png) |
 
 ### Cost per million tokens
 
@@ -164,10 +158,6 @@ ratio, slow first token. A condition has to hold for a while before it is raised
 
 Both switches are at the top right. The language follows the browser by default; messages produced by the server
 (connection failures, alerts, activity) are translated too.
-
-<img src="docs/overview-zh-dark.png" alt="Overview in Chinese with the dark theme" width="70%">
-
-All screenshots show the synthetic cluster of `farsight --demo`.
 
 ## How it works
 
