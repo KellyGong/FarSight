@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>FarSight</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%2314161a'/%3E%3Cpath d='M6 20Q13 10.5 20 10.5T34 20Q27 29.5 20 29.5T6 20Z' fill='none' stroke='%23fff' stroke-width='3' stroke-linejoin='round'/%3E%3Ccircle cx='20' cy='20' r='4.2' fill='%23fff'/%3E%3C/svg%3E">
+  <script src="/js/theme-init.js"></script>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/js/app.js"></script>
+</head>
+<body>
+  <a class="skip" id="skip" href="#view"></a>
+  <div class="shell">
+    <nav class="rail" id="nav">
+      <a class="logo" id="logo" href="#/"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 20Q13 10.5 20 10.5T34 20Q27 29.5 20 29.5T6 20Z"/><circle cx="20" cy="20" r="4.2"/></svg></a>
+      <div class="rail-items" id="rail"></div>
+    </nav>
+    <div class="main">
+      <header class="topbar">
+        <div class="heading">
+          <div class="crumb" id="crumb"></div>
+          <h1 id="title"></h1>
+        </div>
+        <div class="tools">
+          <label class="search"><span id="search-icon"></span><input id="search" type="search" autocomplete="off"><kbd>/</kbd></label>
+          <button class="icon-btn" id="bell" type="button"></button>
+          <button class="icon-btn" id="theme" type="button"></button>
+          <button class="lang-btn" id="lang" type="button"><span data-lang="zh">中</span><span data-lang="en">EN</span></button>
+          <button class="btn primary" id="add" type="button"></button>
+        </div>
+      </header>
+      <div class="banner" id="banner" role="status" hidden></div>
+      <main id="view" tabindex="-1"></main>
+    </div>
+  </div>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div class="tip" id="tip" hidden></div>
+  <noscript><p class="noscript">JavaScript is required. / 此页面需要启用 JavaScript。</p></noscript>
+</body>
+</html>

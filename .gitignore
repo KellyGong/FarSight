@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.DS_Store
+# local runtime data never belongs in the repository
+nodes.json
+settings.json
+server.log
+token
+known_hosts
+askpass.sh
+artifacts/

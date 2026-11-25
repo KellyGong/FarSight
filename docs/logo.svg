@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="96" height="96" role="img" aria-label="FarSight">
+  <rect width="40" height="40" rx="11" fill="#2a78d6"/>
+  <path d="M6 20Q13 10.5 20 10.5T34 20Q27 29.5 20 29.5T6 20Z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="20" cy="20" r="4.2" fill="#fff"/>
+</svg>

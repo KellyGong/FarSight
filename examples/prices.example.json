@@ -1,0 +1,38 @@
+{
+  "_comment": "Example price table for `farsight --prices <file>`. The numbers are placeholders, not quotes: replace them with what you actually pay per GPU-hour. A GPU is matched by PCI device id first, then by name and memory size, then by name alone, then by memory size alone. Prices entered on the Settings page take precedence over this table.",
+  "updated": "2026-01-01",
+  "currency": "$",
+  "cache_hit_cost_ratio": 0.1,
+  "gpus": [
+    {
+      "model": "NVIDIA H200 141GB",
+      "match": { "name_regex": "H200", "memory_gib_range": [136, 144] },
+      "memory_gb": 141,
+      "price_per_gpu_hour": { "low": 2.8, "mid": 3.5, "high": 4.2 }
+    },
+    {
+      "model": "NVIDIA H100 80GB",
+      "match": { "name_regex": "H100", "memory_gib_range": [78, 82] },
+      "memory_gb": 80,
+      "price_per_gpu_hour": { "low": 2.0, "mid": 2.5, "high": 3.0 }
+    },
+    {
+      "model": "NVIDIA A100 80GB",
+      "match": { "name_regex": "A100", "pci_device_ids": ["0x20B210DE", "10de:20b5"], "memory_gib_range": [78, 82] },
+      "memory_gb": 80,
+      "price_per_gpu_hour": { "low": 1.2, "mid": 1.5, "high": 1.8 }
+    },
+    {
+      "model": "NVIDIA A100 40GB",
+      "match": { "name_regex": "A100", "memory_gib_range": [38, 42] },
+      "memory_gb": 40,
+      "price_per_gpu_hour": { "low": 0.9, "mid": 1.1, "high": 1.3 }
+    },
+    {
+      "model": "NVIDIA L40S 48GB",
+      "match": { "name_regex": "L40S", "memory_gib_range": [44, 48] },
+      "memory_gb": 48,
+      "price_per_gpu_hour": { "low": 0.8, "mid": 1.0, "high": 1.2 }
+    }
+  ]
+}
