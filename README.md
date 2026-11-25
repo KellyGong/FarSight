@@ -23,7 +23,7 @@ your nodes, draws how the servers talk to each other, and tells you what a milli
 
 <img src="docs/tour.webp" width="100%" alt="A 45-second tour of FarSight: the cluster overview, adding a node, a service page with its cost estimate, the communication topology between and inside servers, a node page, the dark theme and the Chinese interface">
 
-<sub>A 45-second tour, recorded on the synthetic cluster of <code>farsight --demo</code>. Also available as an <a href="docs/tour.mp4">MP4 video</a>.</sub>
+<sub>A 45-second tour, recorded on the synthetic cluster of <code>farsight --demo</code>. The same tour as an <a href="docs/tour.mp4?raw=true">MP4 file</a> (download).</sub>
 
 </div>
 
