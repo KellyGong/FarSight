@@ -16,6 +16,7 @@ your nodes, draws how the servers talk to each other, and tells you what a milli
 ![Agent on the nodes: none](https://img.shields.io/badge/agent%20on%20the%20nodes-none-2ea44f)
 ![Collection: read-only](https://img.shields.io/badge/collection-read--only-2ea44f)
 ![UI: English | 涓枃](https://img.shields.io/badge/UI-English%20%7C%20%E4%B8%AD%E6%96%87-8250df)
+![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)
 
 [Quick start](#quick-start) 路 [Features](#features) 路 [How it works](#how-it-works) 路
 [What it does on your nodes](#what-farsight-does-on-your-nodes) 路 [Reference](#reference)
@@ -444,6 +445,10 @@ English in `farsight/static/js/i18n-en.js`; a server message is written `T("涓
   bound by the same limit.
 - The topology covers TCP connections of service processes. The RDMA data path is inferred, unix sockets and shared
   memory are not shown, and on a phone the diagram scrolls sideways.
+
+## License
+
+FarSight is released under the [Apache License 2.0](LICENSE).
 
 ---
 
